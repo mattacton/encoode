@@ -3,23 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encoode Base64</title>
+    <title>Full Page Image with Text Box</title>
     <style>
         body, html {
             height: 100%;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
         }
         .bg-image {
-            background-image: url('encoodebse64.png');
+            background-image: url('your-image-url.jpg');
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 80%;
+            transform: translateY(-16.67%); /* Move up by 1/6 of the page height */
+        }
+        .text-box p {
+            margin: 0;
+            color: black;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <div class="bg-image"></div>
+    <div class="bg-image">
+        <div class="text-box">
+            <p>Why are you here? Go do this locally</p>
+        </div>
+    </div>
 </body>
 </html>
